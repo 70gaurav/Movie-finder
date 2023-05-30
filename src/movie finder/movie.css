@@ -2,49 +2,92 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-form{
-    background: linear-gradient(to right, #dce35b, #45b649);
+header .logo img{
+    height: 100px;
+    width: 100px;
+}
+header {
+    background-color: #E7DFC6;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100px;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
 }
-input,button{
-    margin: 0 0.5rem;
+form input ,button{
+    padding: 10px;
     border-radius: 5px;
-    padding: 0.5rem;
-    border: 2px solid red;
+}
+button {
+    background-color: black;
+    color: #fff;
+    margin-left:10px ;
+    
 }
 .wrapper{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    flex-wrap: wrap;
 }
 .box{
+    height: 500px;
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 4px 4px rgba(184,184,184,1);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    border: 2px solid black;
-    /* height: 500px; */
-    width: 24%;
-    margin: 1rem auto;
-    box-shadow: 5px 5px 5px  ;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+
 }
 .box img{
-    width: 300px;
-    height: 350px ;
-    transition: all 0.6s ease;
+    width: 80%;
+    height: 60%;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 .box img:hover{
-    transform: scale(1.1);
+    transform: translateY(-20px);
 }
-.box h3{
-    margin: 0.5rem;
+
+.box a ,.overview-box a{
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    color: #000;
+    background-color: #E7DFC6;
+    transition: all 0.6s ease;
+}
+.box a:hover{
+    background-color: #000;
+    color: #E7DFC6;
+    transform: translateX(20px);
+}
+.box:hover{
+    border-radius: 50px;
+   
+}
+.overview-box{
+    height: 600px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 4px rgba(184,184,184,1);
+    padding: 1rem;
+}
+.overview-box img{
+    height: 60%;
+    width: 40%;
+}
+.overview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
