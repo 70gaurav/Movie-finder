@@ -19,6 +19,8 @@ function Movie() {
     }
     getMovies()
   }, [value])
+  
+
 
   console.log(singleMovie)
   return (

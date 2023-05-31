@@ -11,13 +11,14 @@ export const MovieContext = createContext(null)
 
 function App() {
     const [movies , setMovies] = useState([])
-    const [singleMovie , setSingleMovie] = useState([])
+    const [singleMovie , setSingleMovie] = useState("")
     const [value , setValue] = useState("")
     const [input , setInput] = useState("")
     const [fetch , setFetch] = useState(false)
+    const [trailerKey , setTrailerKey] = useState("")
 
     return (
-        <MovieContext.Provider value={{movies , setMovies , singleMovie , setSingleMovie , input , setInput , value , setValue , fetch , setFetch }}>
+        <MovieContext.Provider value={{movies , setMovies , singleMovie , setSingleMovie , input , setInput , value , setValue , fetch , setFetch ,trailerKey , setTrailerKey }}>
             <BrowserRouter>
             
             <Routes>
