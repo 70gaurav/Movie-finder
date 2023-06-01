@@ -51,8 +51,8 @@ button {
     font-size: calc(0.95rem + 1vw);
 }
 
-.box a , .overview-box a{
-    font-size: calc(0.30rem + 1vw);
+.box a , .overview-box p {
+    font-size: calc(0.50rem + 1vw);
 }
 
 .box img{
@@ -95,8 +95,8 @@ button {
     padding: 2rem;
 }
 .overview-box img{
-    height: 40%;
-    width: 30%;
+    height: 45%;
+    width: 23%;
     border-radius: 10px;
 }
 .overview{
@@ -124,6 +124,10 @@ iframe:hover{
         height: 80%;
         width: 90%;
     }
+    .overview-box img{
+        height: 60%;
+        width: 50%;
+    }
 }
 @media all and (max-width : 700px){
     .box{
@@ -132,10 +136,10 @@ iframe:hover{
     .overview-box{
         margin: 0.rem;
     }
-    .overview-box img{
-        height: 40%;
-        width: 40%;
-    }
+        .overview-box img{
+            height: 60%;
+            width: 60%;
+        }
     header {
       
         padding: 0.5rem 2rem;
@@ -154,8 +158,8 @@ iframe:hover{
         justify-content: space-evenly;
     }
     .overview-box img{
-        height: 45%;
-        width: 50%;
+        height: 50%;
+        width: 70%;
     }
     header {
       
@@ -182,8 +186,8 @@ iframe:hover{
         padding: 10px;
     }
     .overview-box img{
-        height: 45%;
-        width: 60%;
+        height: 60%;
+        width: 95%;
     }
     .overview-box h1, h2, p ,h3{
         margin: 2px 0;
