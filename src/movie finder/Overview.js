@@ -31,7 +31,7 @@ function Overview() {
           )}
           <h1>{`Title- ${singleMovie.title}`}</h1>
           <h2>{`Release-Date : ${singleMovie.release_date}`}</h2>
-          <h3>{`Overview- ${singleMovie.overview}`}</h3>
+          <p>{`Overview- ${singleMovie.overview}`}</p>
           <h3>{`Popularity-${singleMovie.popularity}`}</h3>
           <h3>{`Vote count-${singleMovie.vote_count}`}</h3>
           {
