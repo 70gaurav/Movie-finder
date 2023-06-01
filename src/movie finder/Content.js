@@ -31,7 +31,7 @@ function Movie() {
         movies.map((movie, index) => {
           return (
             <div className='box' key={index}>
-              <h1>{movie.title}</h1>
+              <h2>{movie.title}</h2>
               {movie.poster_path ? <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={"Image not found"}></img> : <img className="dummy" src="https://dummyimage.com/300x300/000/ffffff&text=+IMAGE+NOT+FOUND" alt="404: Movie Not Found"></img>}
               <Link to={"/overview"} onClick={(e) => setSingleMovie(movie)} >click to know more</Link>
 

@@ -34,17 +34,9 @@ function Overview() {
           <h3>{`Overview- ${singleMovie.overview}`}</h3>
           <h3>{`Popularity-${singleMovie.popularity}`}</h3>
           <h3>{`Vote count-${singleMovie.vote_count}`}</h3>
-          {trailerKey ? (
-            <iframe
-              title='Trailer'
-              width='560'
-              height='315'
-              src={`https://www.youtube.com/embed/${trailerKey}`}
-              allowFullScreen
-            ></iframe>
-          ) : (
-            ''
-          )}
+          {
+            trailerKey ? (<Link to='/trailer'>Watch Trailer</Link>) : (" ")
+          }
           <Link to='/'>Go Back</Link>
         </div>
       ) : (
